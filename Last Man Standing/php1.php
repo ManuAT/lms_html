@@ -9,7 +9,7 @@ $conn =new \MySQLi($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
 	die("Connection failed: " . $conn_error);
 }
-if($_POST["pswrd"] == "abhi")
+if($_POST["pswrd"] == "err404")
 {
 $stmt = $conn->prepare("INSERT INTO teams (Teamname) VALUES (?)");
 $stmt->bind_param("s", $_POST['userid']);
